@@ -1,8 +1,8 @@
 import { useState } from "react";
-import style from "./Input.module.css";
+import styles from "./Input.module.css";
 
-import visibilityOff from "../../assets/btn_visibility_off_24px.svg";
-import visibilityOn from "../../assets/btn_visibility_on_24px.svg";
+import visibilityOff from "../../assets/btn_visibility_off.svg";
+import visibilityOn from "../../assets/btn_visibility_on.svg";
 
 export function Input({
   label,
@@ -21,11 +21,11 @@ export function Input({
   };
 
   return (
-    <div className={style.inputWrap}>
-      {label && <label className={style.inputLabel}>{label}</label>}
-      <div className={style.inputContainer}>
+    <div className={styles.inputWrap}>
+      {label && <label className={styles.inputLabel}>{label}</label>}
+      <div className={styles.inputContainer}>
         <input
-          className={`${style.input} ${error ? style.inputError : ""}`}
+          className={`${styles.input} ${error ? styles.inputError : ""}`}
           type={inputType}
           placeholder={placeholder}
           value={value}
@@ -35,7 +35,7 @@ export function Input({
         {type === "password" && (
           <button
             type="button"
-            className={style.passwordToggle}
+            className={styles.passwordToggle}
             onClick={handlePassword}
             disabled={disabled}
           >
@@ -43,7 +43,7 @@ export function Input({
           </button>
         )}
       </div>
-      {error && <p className={style.inputErrorMessage}>*{error}</p>}
+      {error && <p className={styles.inputErrorMessage}>*{error}</p>}
     </div>
   );
 }

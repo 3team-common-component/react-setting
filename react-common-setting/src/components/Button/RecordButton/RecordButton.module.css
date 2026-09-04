@@ -30,7 +30,7 @@
 .start::before {
   content: "";
   display: inline-block;
-  background-image: url(@/assets/ic_play.svg);
+  background-image: url(@/assets/icon_play.svg);
   background-repeat: no-repeat;
   width: 44px;
   height: 44px;
@@ -38,7 +38,7 @@
 .stop::before {
   content: "";
   display: inline-block;
-  background-image: url(@/assets/ic_stop.svg);
+  background-image: url(@/assets/icon_stop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +49,7 @@
   background-color: var(--color-gray);
   pointer-events: none;
 }
-@media (width <= 500px) {
+@media (width <= 480px) {
   .button {
     width: 145px;
     height: 45px;
@@ -58,7 +58,7 @@
   .start::before {
     content: "";
     display: inline-block;
-    background-image: url(@/assets/ic_play.svg);
+    background-image: url(@/assets/icon_play.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
@@ -67,7 +67,7 @@
   .stop::before {
     content: "";
     display: inline-block;
-    background-image: url(@/assets/ic_stop.svg);
+    background-image: url(@/assets/icon_stop.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-size: contain;

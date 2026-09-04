@@ -1,4 +1,8 @@
-import "./App.css";
+import "./reset.css";
+import "./global.css";
+import { Layout } from "./components/layout";
+import { Frame } from "./components/frame";
+import { Point } from "./components/point/Point";
 import { Button } from "./components/Button/BasicButton";
 import { CircleButton } from "./components/Button/CircleButton";
 import { RecordButton } from "./components/Button/RecordButton";
@@ -6,8 +10,15 @@ import { NavButton } from "./components/Button/NavButton";
 
 function App() {
   return (
-    <div className="testContainer">
-      <NavButton size="type01"> 오늘의 습관</NavButton>
+    <>
+      <Layout hasCreateButton>
+        <Frame>
+          <Point></Point>
+          <Point></Point>
+          <Point></Point>
+        </Frame>
+        <Frame isNarrow={true}></Frame>
+<NavButton size="type01"> 오늘의 습관</NavButton>
       <NavButton size="type02"> 홈</NavButton>
 
       <Button bgcolor="primary" size="type02">
@@ -40,7 +51,8 @@ function App() {
       <CircleButton icon="pause" bgcolor="green"/>
       <CircleButton disabled/>
       <CircleButton icon="pause" disabled/>
-    </div>
+      </Layout>
+    </>
   );
 }
 

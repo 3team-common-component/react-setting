@@ -22,7 +22,7 @@
 .button::after {
   content: "";
   display: inline-block;
-  background-image: url(@/assets/ic_arrow_right.svg);
+  background-image: url(@/assets/icon_arrow_right.svg);
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
   width: 82px;
 }
 
-@media (width <= 500px) {
+@media (width <= 480px) {
   .type01 {
     width: 120px;
   }

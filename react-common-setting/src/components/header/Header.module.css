@@ -1,6 +1,8 @@
 header {
   position: sticky;
   top: 0;
+  z-index: 100; 
+  /*위에 요부분만 추가 */
   padding: 20px 32px;
   background: var(--color-background);
   transition: all 0.5s ease;

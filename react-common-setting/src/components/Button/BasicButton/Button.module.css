@@ -32,13 +32,13 @@
 }
 
 .type01 {
-  width: 648px;
+  width: 98%;
 }
 .type02 {
-  width: 600px;
+  width: 95%;
 }
 .type03 {
-  width: 288px;
+  width: 45%;
 }
 .makestudy {
   width: 252px;
@@ -50,21 +50,12 @@
     border-radius: 14px;
   }
 }
-@media (width <= 500px) {
+@media (width <= 480px) {
   .makestudy {
     font-size: 12px;
     width: 106px;
     height: 38px;
     border-radius: 8px;
     white-space: nowrap;
-  }
-  .type01 {
-    width: 312px;
-  }
-  .type02 {
-    width: 312px;
-  }
-  .type03 {
-    width: 140px;
   }
 }
